@@ -36,4 +36,4 @@ spec:
         - cp
         - "-r"
         - "/var/www/."
-        - "/source/app"
+        - "/so/app"
