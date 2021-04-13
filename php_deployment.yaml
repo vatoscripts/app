@@ -19,19 +19,19 @@ spec:
       volumes:
       - name: dir
         hostPath:
-          path: /source
+          path: /so
       containers:
       - name: php
-        image: kiyange26773/laravel-app01:v1
+        image: kiyange26773/testmeapp
         volumeMounts:
         - name: dir
-          mountPath: /source
+          mountPath: /so
       initContainers:
       - name: install
         image: busybox
         volumeMounts:
         - name: dir
-          mountPath: /source
+          mountPath: /so
         command:
         - cp
         - "-r"
